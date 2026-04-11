@@ -2,17 +2,29 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "paths": {
-      "@assets/*": [
-        "./src/assets/*"
+      "@icons/*": [
+        "./src/assets/icons/*"
       ],
-      "@sections/*": [
-        "./src/components/sections/*"
+      "@images/*": [
+        "./src/assets/images/*"
+      ],
+      "@common/*": [
+        "./src/components/sections/common/*"
+      ],
+      "@home/*": [
+        "./src/components/sections/home/*"
       ],
       "@shared/*": [
         "./src/components/shared/*"
       ],
       "@ui/*": [
         "./src/components/ui/*"
+      ],
+      "@content/*": [
+        "./src/content/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
       ],
       "@layouts/*": [
         "./src/layouts/*"
