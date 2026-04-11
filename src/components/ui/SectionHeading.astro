@@ -1,0 +1,75 @@
+---
+interface Props {
+    eyebrow: string;
+    title: string;
+    description?: string;
+    align?: "left" | "center";
+    tone?: "light" | "dark";
+    className?: string;
+}
+
+const {
+    eyebrow,
+    title,
+    description,
+    align = "center",
+    tone = "dark",
+    className = "",
+} = Astro.props;
+
+const isCentered = align === "center";
+
+const eyebrowClass = tone === "light" ? "text-emerald-300" : "text-emerald-600";
+
+const titleClass = tone === "light" ? "text-white" : "text-gray-900";
+
+const descriptionClass =
+    tone === "light" ? "text-emerald-100" : "text-gray-600";
+---
+
+<div
+    class={[
+        "mb-10 md:mb-16",
+        isCentered ? "text-center" : "text-left",
+        className,
+    ]
+        .filter(Boolean)
+        .join(" ")}
+>
+    <h2
+        class={[
+            "font-bold tracking-wide uppercase text-sm mb-2",
+            eyebrowClass,
+        ].join(" ")}
+    >
+        {eyebrow}
+    </h2>
+    <h3
+        class={[
+            "font-display text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight",
+            titleClass,
+        ].join(" ")}
+    >
+        {title}
+    </h3>
+    <div
+        class={[
+            "w-24 h-1 bg-linear-to-r from-emerald-500 to-teal-500 mt-6 rounded-full",
+            isCentered ? "mx-auto" : "mx-0",
+        ].join(" ")}
+    >
+    </div>
+    {
+        description && (
+            <p
+                class={[
+                    "mt-4 md:mt-6 text-base md:text-lg max-w-2xl",
+                    descriptionClass,
+                    isCentered ? "mx-auto" : "mx-0",
+                ].join(" ")}
+            >
+                {description}
+            </p>
+        )
+    }
+</div>

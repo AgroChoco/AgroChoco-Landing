@@ -1,0 +1,33 @@
+---
+import type { IconName } from "../../data/icons";
+import Icon from "./Icon.astro";
+
+interface Props {
+    icon: IconName;
+    label: string;
+    value: string;
+    tone?: "emerald" | "teal";
+}
+
+const { icon, label, value, tone = "emerald" } = Astro.props;
+
+const toneClass =
+    tone === "teal"
+        ? "bg-teal-50 text-teal-600"
+        : "bg-emerald-50 text-emerald-600";
+---
+
+<div class="flex items-center gap-4 min-w-0">
+    <div
+        class={[
+            "w-12 h-12 rounded-full flex items-center justify-center",
+            toneClass,
+        ].join(" ")}
+    >
+        <Icon name={icon} className="w-6 h-6" />
+    </div>
+    <div class="min-w-0">
+        <p class="text-sm text-gray-500 font-medium break-words">{label}</p>
+        <p class="text-gray-900 font-semibold break-words">{value}</p>
+    </div>
+</div>
