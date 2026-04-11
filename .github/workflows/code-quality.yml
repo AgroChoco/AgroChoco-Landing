@@ -37,15 +37,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Auto-format on pull requests
-        if: github.event_name == 'pull_request'
+      - name: Auto-format on pull requests and pushes
+        if: github.actor != 'github-actions[bot]' && (github.event_name == 'pull_request' || github.event_name == 'push')
         run: pnpm format
 
       - name: Commit formatting changes
-        if: github.event_name == 'pull_request'
+        if: github.actor != 'github-actions[bot]' && (github.event_name == 'pull_request' || github.event_name == 'push')
         uses: autofix-ci/action@v1
         with:
-          commit_message: "chore: auto-format with Prettier"
+          commit-message: "chore: auto-format with Prettier"
 
       - name: Run quality checks
         run: pnpm quality
