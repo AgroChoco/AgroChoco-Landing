@@ -1,0 +1,59 @@
+---
+import SectionHeading from "@ui/SectionHeading.astro";
+import Icon from "@ui/Icon.astro";
+import type { FaqItem } from "../../../data/faqs";
+
+interface Props {
+    id?: string;
+    faqs: FaqItem[];
+    allowMultiple?: boolean;
+}
+
+const { id = "preguntas", faqs, allowMultiple = false } = Astro.props;
+const accordionName = `${id}-faq-accordion`;
+---
+
+<section id={id} class="py-24 bg-white relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading
+            eyebrow="Resolvemos tus dudas"
+            title="Preguntas Frecuentes"
+        />
+
+        <div
+            class="space-y-4 animate-fade-up [animation-delay:100ms] motion-reduce:animate-none"
+        >
+            {
+                faqs.map((faq, index) => {
+                    const panelId = `faq-panel-${index + 1}`;
+
+                    return (
+                        <details
+                            class="group border border-gray-100 bg-white rounded-xl shadow-sm overflow-hidden transition-all duration-300"
+                            name={allowMultiple ? undefined : accordionName}
+                        >
+                            <summary class="list-none w-full px-6 py-5 flex justify-between items-center text-left cursor-pointer hover:bg-emerald-50/50 transition-colors [&::-webkit-details-marker]:hidden [&::marker]:content-['']">
+                                <span class="font-bold text-gray-800">
+                                    {faq.question}
+                                </span>
+                                <Icon
+                                    name="chevron-down"
+                                    className="w-5 h-5 text-emerald-600 transition-transform duration-300 group-open:rotate-180"
+                                />
+                            </summary>
+                            <div
+                                id={panelId}
+                                class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-open:grid-rows-[1fr]"
+                                role="region"
+                            >
+                                <div class="overflow-hidden px-6 pb-6 pt-2 text-gray-600 leading-relaxed">
+                                    {faq.answer}
+                                </div>
+                            </div>
+                        </details>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>
