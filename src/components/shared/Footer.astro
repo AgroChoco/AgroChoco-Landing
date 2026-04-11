@@ -1,0 +1,56 @@
+---
+interface FooterLink {
+    href: string;
+    label: string;
+}
+
+interface Props {
+    brandName?: string;
+    location?: string;
+    tagline?: string;
+    links?: FooterLink[];
+}
+
+const {
+    links = [
+        { href: "#inicio", label: "Inicio" },
+        { href: "#nosotros", label: "Nosotros" },
+        { href: "#productos", label: "Productos" },
+        { href: "#servicios", label: "Servicios" },
+    ],
+} = Astro.props;
+---
+
+<footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-2xl text-white">AgroChoco</span>
+            </div>
+
+            <div class="flex gap-6 text-sm">
+                {
+                    links.map((link) => (
+                        <a
+                            href={link.href}
+                            class="hover:text-emerald-400 transition-colors"
+                        >
+                            {link.label}
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+
+        <div
+            class="mt-8 pt-8 border-t border-gray-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center"
+        >
+            <p>
+                &copy; {new Date().getFullYear()}
+                AgroChoco - Biotecnologia Vegetal. Tabasco, Mexico.
+            </p>
+        </div>
+    </div>
+</footer>
