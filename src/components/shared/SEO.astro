@@ -2,22 +2,22 @@
 import { Font } from "astro:assets";
 
 interface Props {
-    title?: string;
-    description?: string;
-    image?: string;
-    canonical?: string;
-    noindex?: boolean;
-    type?: "website" | "article";
-    locale?: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+  locale?: string;
 }
 
 const {
-    title = "AgroChoco",
-    description = "Impulsamos la productividad agricola con biotecnologia vegetal, clonacion de plantas elite y asesoria tecnica especializada.",
-    image = "/AgroChoco.svg",
-    noindex = false,
-    type = "website",
-    locale = "es_MX",
+  title = "AgroChoco",
+  description = "Impulsamos la productividad agricola con biotecnologia vegetal, clonacion de plantas elite y asesoria tecnica especializada.",
+  image = "/AgroChoco.svg",
+  noindex = false,
+  type = "website",
+  locale = "es_MX",
 } = Astro.props as Props;
 
 const site = Astro.site;
@@ -27,19 +27,19 @@ const seoTitle = title.includes("AgroChoco") ? title : `${title} | AgroChoco`;
 const robotsContent = noindex ? "noindex, nofollow" : "index, follow";
 
 const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "AgroChoco",
-    url: site,
-    logo: imageUrl,
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AgroChoco",
+  url: site,
+  logo: imageUrl,
 };
 
 const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "AgroChoco",
-    url: site,
-    inLanguage: "es-MX",
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AgroChoco",
+  url: site,
+  inLanguage: "es-MX",
 };
 ---
 
@@ -64,14 +64,14 @@ const websiteSchema = {
 <meta name="theme-color" content="#064e3b" />
 
 <script
-    type="application/ld+json"
-    is:inline
-    set:html={JSON.stringify(organizationSchema)}
+  type="application/ld+json"
+  is:inline
+  set:html={JSON.stringify(organizationSchema)}
 />
 <script
-    type="application/ld+json"
-    is:inline
-    set:html={JSON.stringify(websiteSchema)}
+  type="application/ld+json"
+  is:inline
+  set:html={JSON.stringify(websiteSchema)}
 />
 
 <Font cssVariable="--font-jakarta" preload />
