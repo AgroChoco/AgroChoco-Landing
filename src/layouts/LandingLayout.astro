@@ -5,23 +5,23 @@ import SEO from "@shared/SEO.astro";
 import Footer from "@shared/Footer.astro";
 
 const {
-    title = "AgroChoco",
-    description = "Impulsamos la productividad agricola con biotecnologia vegetal, clonacion de plantas elite y asesoria tecnica especializada.",
+  title = "AgroChoco",
+  description = "Impulsamos la productividad agricola con biotecnologia vegetal, clonacion de plantas elite y asesoria tecnica especializada.",
 } = Astro.props;
 ---
 
 <html lang="es">
-    <head>
-        <SEO title={title} description={description} />
-        <slot name="head" />
-    </head>
-    <body
-        class="text-gray-800 bg-gray-50 antialiased min-h-screen w-full overflow-x-hidden"
-    >
-        <Navbar />
-        <main>
-            <slot />
-        </main>
-        <Footer />
-    </body>
+  <head>
+    <SEO title={title} description={description} />
+    <slot name="head" />
+  </head>
+  <body
+    class="min-h-screen w-full overflow-x-hidden bg-gray-50 text-gray-800 antialiased"
+  >
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>

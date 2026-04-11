@@ -14,23 +14,23 @@ import flaskConical from "../../assets/icons/flask-conical.svg?raw";
 import tractor from "../../assets/icons/tractor.svg?raw";
 
 interface Props {
-    name: IconName;
-    className?: string;
-    title?: string;
+  name: IconName;
+  className?: string;
+  title?: string;
 }
 
 const icons: Record<IconName, string> = {
-    "arrow-left": arrowLeft,
-    "arrow-up-right": arrowUpRight,
-    "chevron-down": chevronDown,
-    "chevron-right": chevronRight,
-    "map-pin": mapPin,
-    mail,
-    phone,
-    sprout,
-    dna,
-    "flask-conical": flaskConical,
-    tractor,
+  "arrow-left": arrowLeft,
+  "arrow-up-right": arrowUpRight,
+  "chevron-down": chevronDown,
+  "chevron-right": chevronRight,
+  "map-pin": mapPin,
+  mail,
+  phone,
+  sprout,
+  dna,
+  "flask-conical": flaskConical,
+  tractor,
 };
 
 const { name, className = "w-5 h-5", title } = Astro.props as Props;
@@ -38,12 +38,12 @@ const iconSvg = icons[name];
 ---
 
 <span
-    class={[
-        "inline-flex shrink-0 items-center justify-center leading-none align-middle [&>svg]:block [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-current",
-        className,
-    ].join(" ")}
-    aria-hidden={title ? undefined : "true"}
-    aria-label={title}
-    role={title ? "img" : undefined}
-    set:html={iconSvg}
+  class={[
+    "inline-flex shrink-0 items-center justify-center leading-none align-middle [&>svg]:block [&>svg]:w-full [&>svg]:h-full [&>svg]:stroke-current",
+    className,
+  ].join(" ")}
+  aria-hidden={title ? undefined : "true"}
+  aria-label={title}
+  role={title ? "img" : undefined}
+  set:html={iconSvg}
 />
