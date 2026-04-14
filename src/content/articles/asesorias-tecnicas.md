@@ -1,27 +1,24 @@
 ---
-title: Asesorias tecnicas agricolas
-description: Acompanamiento especializado para convertir diagnosticos y recomendaciones en resultados concretos de campo.
-excerpt: Soporte tecnico continuo para reducir riesgo y mejorar rendimiento.
-category: Gestion tecnica
+title: Asesorías técnicas agrícolas
+description: Acompañamiento profesional en todas las etapas del proceso productivo para optimizar recursos y mejorar eficiencia.
+excerpt: Asesoría integral con estrategias personalizadas y decisiones basadas en datos para resultados sostenibles.
+category: Gestión técnica
 order: 5
 ---
 
-La asesoria tecnica integra observacion de campo, analisis de datos y toma de decisiones operativas. Su objetivo es reducir la improvisacion y sostener mejoras medibles en productividad.
+La asesoría técnica agrícola es un servicio integral que acompaña desde la planeación hasta la cosecha para mejorar rendimiento, eficiencia y control del sistema productivo.
 
-## Alcance del acompanamiento
+## ¿En qué te apoyamos?
 
-- Evaluacion inicial de condiciones del cultivo.
-- Diseno de plan de manejo por objetivos.
-- Seguimiento de indicadores tecnicos y productivos.
-- Ajustes segun respuesta real del cultivo.
+- Manejo y planificación de cultivos.
+- Programas de fertilización.
+- Control de plagas y enfermedades.
+- Sistemas de riego eficientes.
+- Selección de semillas y variedades.
 
-## Ventajas para la operacion
+## Beneficios
 
-- Menor riesgo en decisiones criticas.
-- Mejor uso de insumos y presupuesto.
-- Rapida deteccion de desviaciones.
-- Mayor consistencia entre ciclos de produccion.
-
-## Enfoque de trabajo
-
-La asesoria efectiva no solo entrega recomendaciones: acompana su ejecucion, mide resultados y optimiza continuamente el proceso productivo.
+- Incremento del rendimiento agrícola.
+- Toma de decisiones basada en datos.
+- Reducción de pérdidas en producción.
+- Implementación de prácticas sustentables.

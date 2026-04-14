@@ -5,17 +5,16 @@ import FaqSection from "@common/FaqSection.astro";
 import StatsSection from "@common/StatsSection.astro";
 import ContactSection from "@home/ContactSection.astro";
 import HeroSection from "@home/HeroSection.astro";
-import ProductsSection from "@home/ProductsSection.astro";
 import ServicesSection from "@home/ServicesSection.astro";
 import { faqs } from "@data/faqs";
-import { products } from "@data/products";
-import { services } from "@data/services";
+import { getActiveServiceCards } from "@lib/content";
+
+const services = await getActiveServiceCards();
 ---
 
 <LandingLayout>
   <HeroSection />
   <AboutSection />
-  <ProductsSection products={products} />
   <ServicesSection services={services} />
   <StatsSection />
   <FaqSection faqs={faqs} />

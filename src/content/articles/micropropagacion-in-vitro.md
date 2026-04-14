@@ -1,28 +1,27 @@
 ---
-title: Micropropagacion in vitro
-description: Multiplicacion acelerada de plantas en ambiente controlado para obtener material uniforme y libre de contaminantes.
-excerpt: Como funciona la micropropagacion y por que mejora la calidad del cultivo.
-category: Biotecnologia vegetal
+title: Micropropagación in vitro
+description: Producción masiva y controlada de plantas en laboratorio para obtener material uniforme, sano y de alta calidad genética.
+excerpt: Técnica in vitro para escalar material vegetal libre de patógenos y mejorar la productividad.
+category: Biotecnología vegetal
 order: 2
 ---
 
-La micropropagacion in vitro permite reproducir plantas a gran escala dentro de condiciones controladas. Esto reduce variabilidad, mejora sanidad y acelera el establecimiento de lotes productivos.
+La micropropagación in vitro es una técnica biotecnológica que permite multiplicar plantas en condiciones estériles y controladas, a partir de explantes seleccionados.
 
-## Que es la micropropagacion
+## ¿Cómo funciona?
 
-Es una tecnica de propagacion vegetal basada en el cultivo de tejidos. A partir de una planta madre seleccionada, se obtienen explantes que se desarrollan en medios nutritivos esteriles.
+El proceso utiliza medios de cultivo enriquecidos con nutrientes y reguladores de crecimiento para guiar el desarrollo de las plantas por fases. Esto permite obtener material vegetal de alta calidad genética, libre de patógenos y con mejor capacidad de adaptación.
 
-## Beneficios para el productor
+## ¿Qué ofrece esta técnica?
 
-- Uniformidad genetica en grandes volumenes.
-- Menor riesgo sanitario al iniciar lotes nuevos.
-- Mayor velocidad para escalar materiales promisorios.
-- Mejor trazabilidad desde laboratorio hasta campo.
+- Producción de plantas libres de enfermedades.
+- Multiplicación acelerada de especies vegetales.
+- Control estricto de calidad genética.
+- Protocolos adaptados a cada cultivo.
 
-## Etapas del proceso
+## Beneficios para la producción
 
-1. Seleccion de material madre.
-2. Establecimiento en medio esteril.
-3. Multiplicacion de brotes.
-4. Enraizamiento y acondicionamiento.
-5. Aclimatacion progresiva para vivero y campo.
+- Alta tasa de supervivencia en campo.
+- Uniformidad genética en los cultivos.
+- Disponibilidad constante de material vegetal.
+- Reducción de riesgos fitosanitarios.

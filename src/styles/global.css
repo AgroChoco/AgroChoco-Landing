@@ -19,3 +19,49 @@
     }
   }
 }
+
+@layer components {
+  .prose-content {
+    @apply rounded-2xl border border-emerald-100/70 bg-white px-5 py-6 leading-7 text-gray-700 shadow-sm sm:rounded-3xl sm:px-7 sm:py-8 sm:leading-8 md:px-10 md:py-10;
+  }
+
+  .prose-content a {
+    @apply text-emerald-700 underline;
+  }
+
+  .prose-content:hover a {
+    @apply text-emerald-800;
+  }
+
+  .prose-content blockquote {
+    @apply my-6 rounded-xl border-l-4 border-emerald-500 bg-emerald-50/60 px-5 py-3 text-emerald-900;
+  }
+
+  .prose-content code {
+    @apply rounded bg-gray-100 px-1.5 py-0.5 text-[0.95em];
+  }
+
+  .prose-content h2 {
+    @apply mt-10 mb-4 text-xl font-bold text-emerald-900 sm:text-2xl;
+  }
+
+  .prose-content h3 {
+    @apply mt-7 mb-3 text-lg font-semibold text-gray-900 sm:text-xl;
+  }
+
+  .prose-content p {
+    @apply mb-4;
+  }
+
+  .prose-content ul {
+    @apply mb-5 list-disc pl-6;
+  }
+
+  .prose-content ol {
+    @apply mb-5 list-decimal pl-6;
+  }
+
+  .prose-content li {
+    @apply mb-2;
+  }
+}

@@ -4,7 +4,7 @@ interface Props {
   title: string;
   description?: string;
   align?: "left" | "center";
-  tone?: "light" | "dark";
+  tone?: "light" | "dark" | "hero";
   className?: string;
 }
 
@@ -19,12 +19,31 @@ const {
 
 const isCentered = align === "center";
 
-const eyebrowClass = tone === "light" ? "text-emerald-300" : "text-emerald-600";
+const eyebrowClass =
+  tone === "light"
+    ? "text-emerald-300"
+    : tone === "hero"
+      ? "text-emerald-200"
+      : "text-emerald-600";
 
-const titleClass = tone === "light" ? "text-white" : "text-gray-900";
+const titleClass =
+  tone === "light"
+    ? "text-white"
+    : tone === "hero"
+      ? "bg-linear-to-r from-emerald-300 to-teal-200 bg-clip-text text-transparent"
+      : "text-gray-900";
 
 const descriptionClass =
-  tone === "light" ? "text-emerald-100" : "text-gray-600";
+  tone === "light"
+    ? "text-emerald-100"
+    : tone === "hero"
+      ? "text-emerald-50/90"
+      : "text-gray-600";
+
+const dividerClass =
+  tone === "hero"
+    ? "bg-linear-to-r from-emerald-300 to-teal-200"
+    : "bg-linear-to-r from-emerald-500 to-teal-500";
 ---
 
 <div
@@ -50,7 +69,8 @@ const descriptionClass =
   </h3>
   <div
     class={[
-      "w-24 h-1 bg-linear-to-r from-emerald-500 to-teal-500 mt-6 rounded-full",
+      "w-24 h-1 mt-6 rounded-full",
+      dividerClass,
       isCentered ? "mx-auto" : "mx-0",
     ].join(" ")}
   >

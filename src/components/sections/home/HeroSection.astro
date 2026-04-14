@@ -1,9 +1,7 @@
 ---
-import { Picture } from "astro:assets";
 import Button from "@ui/Button.astro";
 import Icon from "@ui/Icon.astro";
-import heroBackground from "@images/ui/placeholder.png";
-import type { ImageMetadata } from "astro";
+import { heroSectionImage } from "../../../data/media";
 
 interface HighlightItem {
   icon: string;
@@ -23,7 +21,7 @@ interface Props {
   headline?: string;
   highlightedText?: string;
   description?: string;
-  backgroundImage?: ImageMetadata;
+  backgroundImage?: string;
   strapline?: string;
   primaryCta?: CtaLink;
   secondaryCta?: CtaLink;
@@ -33,20 +31,20 @@ interface Props {
 
 const {
   id = "inicio",
-  headline = "Biotecnologia Vegetal para el",
+  headline = "Biotecnología Vegetal para el",
   highlightedText = "Futuro del Campo",
-  description = "Impulsamos tu productividad agricola mediante la clonacion de plantas elite, analisis cientifico del suelo y asesoria tecnica especializada.",
+  description = "Impulsamos la productividad con micropropagación in vitro, clonación de plantas, análisis de suelo y asesoría técnica agrícola basada en datos.",
   primaryCta = {
-    label: "Ver Productos",
-    href: "#productos",
+    label: "Ver Servicios",
+    href: "#servicios",
     variant: "primary",
   },
   secondaryCta = {
-    label: "Solicitar Asesoria",
+    label: "Solicitar Asesoría",
     href: "#contacto",
     variant: "outline-light",
   },
-  backgroundImage = heroBackground,
+  backgroundImage = heroSectionImage,
 } = Astro.props;
 ---
 
@@ -55,10 +53,9 @@ const {
   class="relative overflow-hidden pt-16 pb-20 [clip-path:polygon(0_0,100%_0,100%_95%,0_100%)] sm:pt-20 sm:pb-28 lg:pt-32 lg:pb-48"
 >
   <div class="absolute inset-0">
-    <Picture
+    <img
       src={backgroundImage}
-      formats={["avif", "webp"]}
-      alt="Campo agricola con cultivos"
+      alt="Campo agrícola con cultivos"
       class="h-full w-full object-cover"
       loading="lazy"
       decoding="async"

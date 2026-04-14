@@ -6,24 +6,24 @@ export interface FaqItem {
 export const faqs: FaqItem[] = [
   {
     question:
-      "Que ventajas tiene la clonacion in vitro sobre la semilla tradicional?",
+      "¿Qué ventajas tiene la clonación in vitro sobre la semilla tradicional?",
     answer:
-      "La micropropagacion in vitro garantiza que todas las plantas sean geneticamente identicas a la planta madre de alto rendimiento. Ademas, te aseguras de adquirir material libre de virus, hongos y bacterias desde el dia uno.",
+      "La micropropagación in vitro garantiza que todas las plantas sean genéticamente idénticas a la planta madre de alto rendimiento. Además, te aseguras de adquirir material libre de virus, hongos y bacterias desde el día uno.",
   },
   {
     question:
-      "Atienden a pequenos productores o solo a grandes agroindustrias?",
+      "¿Atienden a pequeños productores o solo a grandes agroindustrias?",
     answer:
-      "Atendemos a todo tipo de productor. Nuestros segmentos de clientes incluyen agricultores pequenos, medianos y grandes, asi como invernaderos, viveros y cooperativas.",
+      "Atendemos a todo tipo de productor. Nuestros segmentos de clientes incluyen agricultores pequeños, medianos y grandes, así como invernaderos, viveros y cooperativas.",
   },
   {
-    question: "Que incluyen los contratos de manejo de cultivos?",
+    question: "¿Qué incluyen los contratos de manejo de cultivos?",
     answer:
-      "Incluyen desde el diagnostico inicial del suelo y la provision de las plantas elite, hasta un cronograma de fertilizacion, visitas tecnicas constantes y control de plagas, acompanandote hasta la cosecha.",
+      "Incluyen desde el diagnóstico inicial del suelo y la provisión de plantas élite, hasta un cronograma de fertilización, visitas técnicas constantes y control de plagas, acompañándote hasta la cosecha.",
   },
   {
-    question: "Como puedo solicitar un analisis de suelo de mi parcela?",
+    question: "¿Cómo puedo solicitar un análisis de suelo de mi parcela?",
     answer:
-      "Puedes contactarnos directamente mediante nuestro formulario web, por WhatsApp o correo electronico. Un asesor programara una visita a tu parcela para realizar la toma de muestras de manera profesional.",
+      "Puedes contactarnos directamente mediante nuestro formulario web, por WhatsApp o correo electrónico. Un asesor programará una visita a tu parcela para realizar la toma de muestras de manera profesional.",
   },
 ];
