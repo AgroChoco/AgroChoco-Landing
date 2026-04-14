@@ -17,4 +17,3 @@ Ser una empresa líder en biotecnología agrícola en el sureste de México, rec
 **Propuesta de valor**
 
 Impulsamos la productividad agrícola mediante soluciones biotecnológicas integrales que combinan la clonación de plantas élite, análisis científico del suelo y asesoría agronómica especializada, permitiendo a los productores obtener cultivos más rentables, homogéneos y sostenibles.
-

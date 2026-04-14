@@ -5,12 +5,12 @@ import analisisSuelosImage from "@images/sections/services/analisis-suelos-lab-v
 import clonacionPlantasImage from "@images/sections/services/clonacion-plantas-external.jpg";
 
 const serviceImageMap: Record<string, ImageMetadata> = {
-    "asesoria-tecnica-agricola": asesoriaImage,
-    "analisis-de-suelos": analisisSuelosImage,
-    "clonacion-de-plantas": clonacionPlantasImage,
-    "micropropagacion-in-vitro": laboratorioImage,
+  "asesoria-tecnica-agricola": asesoriaImage,
+  "analisis-de-suelos": analisisSuelosImage,
+  "clonacion-de-plantas": clonacionPlantasImage,
+  "micropropagacion-in-vitro": laboratorioImage,
 };
 
 export function getServiceImage(slug: string): ImageMetadata {
-    return serviceImageMap[slug] ?? laboratorioImage;
+  return serviceImageMap[slug] ?? laboratorioImage;
 }

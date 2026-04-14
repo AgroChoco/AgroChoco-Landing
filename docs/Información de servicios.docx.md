@@ -1,30 +1,30 @@
-Micropropagación *in vitro*
+Micropropagación _in vitro_
 
 **Descripción**
 
-La micropropagación *in vitro* es un servicio biotecnológico avanzado que permite la **producción masiva y controlada de plantas en condiciones de laboratorio**, a partir de pequeños fragmentos vegetales (explantes). Este proceso se realiza en ambientes estériles, utilizando medios de cultivo enriquecidos con nutrientes y reguladores de crecimiento, lo que garantiza el desarrollo óptimo de las plantas desde etapas iniciales.
+La micropropagación _in vitro_ es un servicio biotecnológico avanzado que permite la **producción masiva y controlada de plantas en condiciones de laboratorio**, a partir de pequeños fragmentos vegetales (explantes). Este proceso se realiza en ambientes estériles, utilizando medios de cultivo enriquecidos con nutrientes y reguladores de crecimiento, lo que garantiza el desarrollo óptimo de las plantas desde etapas iniciales.
 
 A través de esta técnica, es posible obtener **material vegetal de alta calidad genética, libre de patógenos y con gran capacidad de adaptación**, lo cual resulta ideal para sistemas agrícolas intensivos y proyectos de producción a gran escala. Además, permite acelerar los ciclos productivos y asegurar la disponibilidad constante de plantas durante todo el año.
 
 **¿Qué ofrecemos?**
 
-* Producción de plantas libres de enfermedades 
+- Producción de plantas libres de enfermedades
 
-* Multiplicación acelerada de especies vegetales 
+- Multiplicación acelerada de especies vegetales
 
-* Control estricto de calidad genética 
+- Control estricto de calidad genética
 
-* Protocolos adaptados a cada cultivo 
+- Protocolos adaptados a cada cultivo
 
 **Beneficios**
 
-* Alta tasa de supervivencia en campo 
+- Alta tasa de supervivencia en campo
 
-* Uniformidad genética en los cultivos 
+- Uniformidad genética en los cultivos
 
-* Disponibilidad constante de material vegetal 
+- Disponibilidad constante de material vegetal
 
-* Reducción de riesgos fitosanitarios 
+- Reducción de riesgos fitosanitarios
 
 Clonación de plantas
 
@@ -38,23 +38,23 @@ Gracias a la clonación, es posible escalar rápidamente la producción de plant
 
 **¿Qué ofrecemos?**
 
-* Clonación mediante esquejes, injertos y técnicas avanzadas 
+- Clonación mediante esquejes, injertos y técnicas avanzadas
 
-* Selección de plantas madre de alto rendimiento 
+- Selección de plantas madre de alto rendimiento
 
-* Producción homogénea de cultivos 
+- Producción homogénea de cultivos
 
-* Adaptación a distintas especies agrícolas 
+- Adaptación a distintas especies agrícolas
 
 **Beneficios**
 
-* Conservación de características deseadas 
+- Conservación de características deseadas
 
-* Mayor rentabilidad en la producción 
+- Mayor rentabilidad en la producción
 
-* Reducción de variabilidad en cultivos 
+- Reducción de variabilidad en cultivos
 
-* Optimización del manejo agrícola
+- Optimización del manejo agrícola
 
 Análisis de suelo
 
@@ -68,23 +68,23 @@ Nuestro enfoque se basa en un diagnóstico integral que no solo identifica probl
 
 **¿Qué analizamos?**
 
-* pH del suelo (acidez o alcalinidad) 
+- pH del suelo (acidez o alcalinidad)
 
-* Nutrientes esenciales (N, P, K y micronutrientes) 
+- Nutrientes esenciales (N, P, K y micronutrientes)
 
-* Materia orgánica 
+- Materia orgánica
 
-* Textura y estructura del suelo 
+- Textura y estructura del suelo
 
 **Beneficios**
 
-* Diagnóstico preciso de las condiciones del terreno 
+- Diagnóstico preciso de las condiciones del terreno
 
-* Uso eficiente de fertilizantes 
+- Uso eficiente de fertilizantes
 
-* Incremento en la productividad del cultivo 
+- Incremento en la productividad del cultivo
 
-* Reducción de costos innecesarios
+- Reducción de costos innecesarios
 
 Asesoría técnica agrícola
 
@@ -98,23 +98,22 @@ Trabajamos directamente con productores para ofrecer soluciones prácticas, sost
 
 **¿En qué te apoyamos?**
 
-* Manejo y planificación de cultivos 
+- Manejo y planificación de cultivos
 
-* Programas de fertilización 
+- Programas de fertilización
 
-* Control de plagas y enfermedades 
+- Control de plagas y enfermedades
 
-* Sistemas de riego eficientes 
+- Sistemas de riego eficientes
 
-* Selección de semillas y variedades 
+- Selección de semillas y variedades
 
 **Beneficios**
 
-* Incremento del rendimiento agrícola 
+- Incremento del rendimiento agrícola
 
-* Toma de decisiones basada en datos 
+- Toma de decisiones basada en datos
 
-* Reducción de pérdidas en producción 
+- Reducción de pérdidas en producción
 
-* Implementación de prácticas sustentables 
-
+- Implementación de prácticas sustentables

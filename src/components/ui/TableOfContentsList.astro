@@ -1,30 +1,30 @@
 ---
 interface TocItem {
-    slug: string;
-    text: string;
+  slug: string;
+  text: string;
 }
 
 interface Props {
-    items: TocItem[];
-    listClass?: string;
-    linkClass?: string;
+  items: TocItem[];
+  listClass?: string;
+  linkClass?: string;
 }
 
 const {
-    items,
-    listClass = "mt-4 space-y-3",
-    linkClass = "text-sm text-gray-600 transition-colors hover:text-emerald-700",
+  items,
+  listClass = "mt-4 space-y-3",
+  linkClass = "text-sm text-gray-600 transition-colors hover:text-emerald-700",
 } = Astro.props;
 ---
 
 <ul class={listClass}>
-    {
-        items.map((item) => (
-            <li>
-                <a href={`#${item.slug}`} class={linkClass}>
-                    {item.text}
-                </a>
-            </li>
-        ))
-    }
+  {
+    items.map((item) => (
+      <li>
+        <a href={`#${item.slug}`} class={linkClass}>
+          {item.text}
+        </a>
+      </li>
+    ))
+  }
 </ul>
