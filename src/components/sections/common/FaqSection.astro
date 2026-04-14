@@ -33,7 +33,9 @@ const accordionName = `${id}-faq-accordion`;
               name={allowMultiple ? undefined : accordionName}
             >
               <summary class="flex w-full cursor-pointer list-none items-center justify-between px-4 py-4 text-left transition-colors hover:bg-emerald-50/50 sm:px-6 sm:py-5 [&::-webkit-details-marker]:hidden [&::marker]:content-['']">
-                <span class="font-bold text-gray-800 break-words">{faq.question}</span>
+                <span class="font-bold break-words text-gray-800">
+                  {faq.question}
+                </span>
                 <Icon
                   name="chevron-down"
                   className="w-5 h-5 text-emerald-600 transition-transform duration-300 group-open:rotate-180"

@@ -48,7 +48,12 @@ const {
     >
       {
         items.map((item, index) => (
-          <div class={["p-3 sm:p-4", index === 0 ? "" : "pt-7 sm:pt-8 md:pt-4"].join(" ")}>
+          <div
+            class={[
+              "p-3 sm:p-4",
+              index === 0 ? "" : "pt-7 sm:pt-8 md:pt-4",
+            ].join(" ")}
+          >
             <div class="mb-2 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
               {item.value}
             </div>
