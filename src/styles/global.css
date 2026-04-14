@@ -22,11 +22,11 @@
 
 @layer components {
   .prose-content {
-    @apply rounded-2xl border border-emerald-100/70 bg-white px-5 py-6 leading-7 text-gray-700 shadow-sm sm:rounded-3xl sm:px-7 sm:py-8 sm:leading-8 md:px-10 md:py-10;
+    @apply rounded-2xl border border-emerald-100/70 bg-white px-5 py-6 leading-7 wrap-break-word text-gray-700 shadow-sm sm:rounded-3xl sm:px-7 sm:py-8 sm:leading-8 md:px-10 md:py-10;
   }
 
   .prose-content a {
-    @apply text-emerald-700 underline;
+    @apply wrap-break-word text-emerald-700 underline;
   }
 
   .prose-content:hover a {
@@ -38,15 +38,15 @@
   }
 
   .prose-content code {
-    @apply rounded bg-gray-100 px-1.5 py-0.5 text-[0.95em];
+    @apply rounded bg-gray-100 px-1.5 py-0.5 text-[0.95em] break-all sm:wrap-break-word;
   }
 
   .prose-content h2 {
-    @apply mt-10 mb-4 text-xl font-bold text-emerald-900 sm:text-2xl;
+    @apply mt-8 mb-3 text-lg font-bold text-emerald-900 sm:mt-10 sm:mb-4 sm:text-2xl;
   }
 
   .prose-content h3 {
-    @apply mt-7 mb-3 text-lg font-semibold text-gray-900 sm:text-xl;
+    @apply mt-6 mb-2.5 text-base font-semibold text-gray-900 sm:mt-7 sm:mb-3 sm:text-xl;
   }
 
   .prose-content p {
@@ -62,6 +62,6 @@
   }
 
   .prose-content li {
-    @apply mb-2;
+    @apply mb-2 wrap-break-word;
   }
 }

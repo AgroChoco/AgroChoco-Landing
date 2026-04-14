@@ -61,7 +61,7 @@ const {
 >
   <div
     aria-hidden="true"
-    class="pointer-events-none absolute inset-x-0 top-0 -translate-y-1/2"
+    class="pointer-events-none absolute inset-x-0 top-0 hidden -translate-y-1/2 sm:block"
   >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="relative h-14">
@@ -86,10 +86,10 @@ const {
   </div>
 
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="relative z-10 grid items-center gap-12 lg:grid-cols-2">
+    <div class="relative z-10 grid items-center gap-10 sm:gap-12 lg:grid-cols-2">
       <div class="animate-fade-up motion-reduce:animate-none">
         <h2
-          class="mb-5 text-2xl leading-tight font-extrabold text-gray-900 sm:mb-6 sm:text-3xl md:text-4xl"
+          class="mb-5 text-xl leading-tight font-extrabold text-gray-900 sm:mb-6 sm:text-3xl md:text-4xl"
         >
           {title}
           <span class="text-emerald-600">{emphasizedText}</span>
@@ -113,7 +113,7 @@ const {
               loading="lazy"
               decoding="async"
               alt={imageAlt}
-              class="h-64 w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              class="h-56 w-full object-cover transition-transform duration-700 group-hover:scale-105 sm:h-64"
             />
             <div
               class="absolute inset-0 bg-linear-to-t from-emerald-900/45 via-transparent to-transparent"
@@ -147,7 +147,7 @@ const {
         <form
           class="rounded-2xl border border-emerald-100 bg-white/75 p-5 shadow-lg backdrop-blur-xs sm:p-8"
         >
-          <h3 class="mb-6 text-2xl font-bold text-gray-900">
+          <h3 class="mb-6 text-xl font-bold text-gray-900 sm:text-2xl">
             Solicitar Asesoría
           </h3>
           <div class="space-y-4">

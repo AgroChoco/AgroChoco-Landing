@@ -13,7 +13,7 @@ const { id = "preguntas", faqs, allowMultiple = false } = Astro.props;
 const accordionName = `${id}-faq-accordion`;
 ---
 
-<section id={id} class="relative bg-white py-24">
+<section id={id} class="relative bg-white py-20 sm:py-24">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
     <SectionHeading
       eyebrow="Resolvemos tus dudas"
@@ -32,8 +32,8 @@ const accordionName = `${id}-faq-accordion`;
               class="group overflow-hidden rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-300"
               name={allowMultiple ? undefined : accordionName}
             >
-              <summary class="flex w-full cursor-pointer list-none items-center justify-between px-6 py-5 text-left transition-colors hover:bg-emerald-50/50 [&::-webkit-details-marker]:hidden [&::marker]:content-['']">
-                <span class="font-bold text-gray-800">{faq.question}</span>
+              <summary class="flex w-full cursor-pointer list-none items-center justify-between px-4 py-4 text-left transition-colors hover:bg-emerald-50/50 sm:px-6 sm:py-5 [&::-webkit-details-marker]:hidden [&::marker]:content-['']">
+                <span class="font-bold text-gray-800 break-words">{faq.question}</span>
                 <Icon
                   name="chevron-down"
                   className="w-5 h-5 text-emerald-600 transition-transform duration-300 group-open:rotate-180"
@@ -44,7 +44,7 @@ const accordionName = `${id}-faq-accordion`;
                 class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-open:grid-rows-[1fr]"
                 role="region"
               >
-                <div class="overflow-hidden px-6 pt-2 pb-6 leading-relaxed text-gray-600">
+                <div class="overflow-hidden px-4 pt-2 pb-5 leading-relaxed text-gray-600 sm:px-6 sm:pb-6">
                   {faq.answer}
                 </div>
               </div>

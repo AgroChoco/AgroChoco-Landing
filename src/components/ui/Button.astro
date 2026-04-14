@@ -3,7 +3,7 @@ interface Props {
   href?: string;
   type?: "button" | "submit" | "reset";
   variant?: "primary" | "secondary" | "outline-light";
-  size?: "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
   fullWidth?: boolean;
   className?: string;
 }
@@ -29,9 +29,10 @@ const variantClassMap: Record<NonNullable<Props["variant"]>, string> = {
 };
 
 const sizeClassMap: Record<NonNullable<Props["size"]>, string> = {
+  xs: "px-3 py-2 text-xs rounded-full",
   sm: "px-4 py-2 text-sm rounded-full",
   md: "px-6 py-3 text-base rounded-full",
-  lg: "px-8 py-4 text-lg rounded-full",
+  lg: "px-6 py-3 text-base rounded-full sm:px-8 sm:py-4 sm:text-lg",
 };
 
 const classes = [

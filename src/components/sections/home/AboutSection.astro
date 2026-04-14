@@ -44,14 +44,14 @@ const {
 } = Astro.props;
 ---
 
-<section id={id} class="relative bg-white py-24">
+<section id={id} class="relative bg-white py-20 sm:py-24">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <SectionHeading
       eyebrow="Conoce nuestra empresa"
       title="Especialistas en Biotecnología Vegetal"
     />
 
-    <div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+    <div class="grid grid-cols-1 items-center gap-10 sm:gap-16 lg:grid-cols-2">
       <div
         class="animate-fade-up relative [animation-delay:100ms] motion-reduce:animate-none"
       >
@@ -64,10 +64,10 @@ const {
           loading="lazy"
           decoding="async"
           alt="Laboratorio biotecnológico"
-          class="relative z-10 h-112.5 w-full rounded-2xl object-cover shadow-xl"
+          class="relative z-10 h-72 w-full rounded-2xl object-cover shadow-xl sm:h-96 lg:h-112.5"
         />
         <div
-          class="absolute -right-6 -bottom-6 z-20 hidden rounded-xl border border-gray-100 bg-white p-6 shadow-xl md:block"
+          class="absolute -right-4 -bottom-4 z-20 hidden rounded-xl border border-gray-100 bg-white p-6 shadow-xl lg:block"
         >
           <div class="flex items-center gap-4">
             <div class="rounded-full bg-emerald-100 p-3 text-emerald-600">
@@ -81,7 +81,7 @@ const {
         </div>
       </div>
 
-      <div class="relative flex flex-col gap-6 lg:justify-center lg:gap-7">
+      <div class="relative flex flex-col gap-5 sm:gap-6 lg:justify-center lg:gap-7">
         {
           pillars.map((pillar, index) => (
             <div
@@ -102,11 +102,11 @@ const {
                 <SurfaceCard
                   tone={pillar.tone === "teal" ? "teal" : "emerald"}
                   hover="lift"
-                  className="p-6 md:p-7 h-full min-h-56 relative overflow-hidden cursor-pointer transition-transform duration-300 group-hover:-translate-y-0.5"
+                  className="relative h-full cursor-pointer overflow-hidden p-5 transition-transform duration-300 group-hover:-translate-y-0.5 sm:min-h-56 sm:p-6 md:p-7"
                 >
                   <h4
                     class={[
-                      "mb-3 flex items-center gap-2 text-xl font-bold",
+                      "mb-3 flex items-center gap-2 text-lg font-bold sm:text-xl",
                       pillar.tone === "teal"
                         ? "text-teal-800"
                         : "text-emerald-800",

@@ -50,7 +50,7 @@ const {
 
 <section
   id={id}
-  class="relative overflow-hidden pt-16 pb-20 [clip-path:polygon(0_0,100%_0,100%_95%,0_100%)] sm:pt-20 sm:pb-28 lg:pt-32 lg:pb-48"
+  class="relative overflow-hidden pt-14 pb-16 sm:pt-20 sm:pb-28 sm:[clip-path:polygon(0_0,100%_0,100%_95%,0_100%)] lg:pt-32 lg:pb-48"
 >
   <div class="absolute inset-0">
     <img
@@ -71,13 +71,13 @@ const {
   </div>
 
   <div
-    class="relative z-10 mx-auto mt-12 flex max-w-7xl items-center gap-8 px-4 sm:mt-16 sm:gap-12 sm:px-6 lg:flex-row lg:px-8"
+    class="relative z-10 mx-auto mt-10 flex max-w-7xl items-center gap-6 px-4 sm:mt-16 sm:gap-12 sm:px-6 lg:flex-row lg:px-8"
   >
     <div
       class="animate-fade-up mx-auto w-full max-w-4xl text-center motion-reduce:animate-none"
     >
       <h1
-        class="font-display mb-5 text-3xl leading-tight font-extrabold text-white sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl"
+        class="font-display mb-5 text-2xl leading-snug font-extrabold text-white sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl"
       >
         {headline}
         <span
@@ -88,7 +88,7 @@ const {
       </h1>
 
       <p
-        class="mx-auto mb-8 text-base leading-relaxed text-emerald-50 sm:mb-10 sm:text-lg md:text-xl"
+        class="mx-auto mb-8 text-sm leading-relaxed text-emerald-50 sm:mb-10 sm:text-lg md:text-xl"
       >
         {description}
       </p>
@@ -98,7 +98,7 @@ const {
           href={primaryCta.href}
           variant={primaryCta.variant}
           size="lg"
-          className="group text-base shadow-lg hover:shadow-emerald-500/30 sm:text-lg"
+          className="group text-sm shadow-lg hover:shadow-emerald-500/30 sm:text-lg"
         >
           {primaryCta.label}
           <Icon
@@ -110,7 +110,7 @@ const {
           href={secondaryCta.href}
           variant={secondaryCta.variant}
           size="lg"
-          className="border-white/35 bg-white/10 text-base shadow-[0_10px_30px_rgba(15,23,42,0.22)] backdrop-blur-md hover:border-white/55 hover:bg-white/20 sm:text-lg"
+          className="border-white/35 bg-white/10 text-sm shadow-[0_10px_30px_rgba(15,23,42,0.22)] backdrop-blur-md hover:border-white/55 hover:bg-white/20 sm:text-lg"
         >
           {secondaryCta.label}
         </Button>

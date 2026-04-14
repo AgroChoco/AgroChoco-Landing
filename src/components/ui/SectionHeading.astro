@@ -47,7 +47,7 @@ const dividerClass =
 ---
 
 <div
-  class={["mb-10 md:mb-16", isCentered ? "text-center" : "text-left", className]
+  class={["mb-9 md:mb-16", isCentered ? "text-center" : "text-left", className]
     .filter(Boolean)
     .join(" ")}
 >
@@ -61,7 +61,7 @@ const dividerClass =
   </h2>
   <h3
     class={[
-      "font-display text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight",
+      "font-display text-xl sm:text-3xl md:text-4xl font-extrabold leading-tight",
       titleClass,
     ].join(" ")}
   >
@@ -69,7 +69,7 @@ const dividerClass =
   </h3>
   <div
     class={[
-      "w-24 h-1 mt-6 rounded-full",
+      "h-1 w-20 mt-5 rounded-full sm:w-24 sm:mt-6",
       dividerClass,
       isCentered ? "mx-auto" : "mx-0",
     ].join(" ")}
