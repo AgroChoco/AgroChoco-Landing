@@ -1,10 +1,8 @@
 ---
-import { Picture } from "astro:assets";
 import Button from "@ui/Button.astro";
 import InfoItem from "@ui/InfoItem.astro";
 import type { IconName } from "../../../data/icons";
 import { globalPlaceholderImage } from "../../../data/media";
-import type { ImageMetadata } from "astro";
 
 interface ContactDetail {
   icon: IconName;
@@ -18,7 +16,7 @@ interface Props {
   title?: string;
   emphasizedText?: string;
   description?: string;
-  image?: ImageMetadata;
+  image?: string;
   imageAlt?: string;
   contactDetails?: ContactDetail[];
   options?: string[];
@@ -26,33 +24,34 @@ interface Props {
 
 const {
   id = "contacto",
-  title = "Lleva tu produccion al",
-  emphasizedText = "siguiente nivel",
-  description = "Ya seas un pequeno agricultor, un gran invernadero o una empresa agroindustrial, tenemos el paquete tecnologico adecuado para ti.",
+  title = "Agenda una asesoría para tu",
+  emphasizedText = "próximo ciclo productivo",
+  description = "Cuéntanos tu objetivo de cultivo y te ayudamos a definir el servicio técnico más conveniente según etapa, recursos y condiciones de campo.",
   image = globalPlaceholderImage,
-  imageAlt = "Cultivo saludable en campo agricola",
+  imageAlt = "Cultivo saludable en campo agrícola",
   contactDetails = [
     {
       icon: "map-pin",
-      label: "Ubicacion",
-      value: "Tabasco, Mexico",
+      label: "Ubicación",
+      value: "Tabasco, México",
     },
     {
       icon: "mail",
-      label: "Correo Electronico",
+      label: "Correo electrónico",
       value: "contacto@agrochoco.com.mx",
     },
     {
       icon: "phone",
-      label: "Atencion / WhatsApp",
+      label: "Atención / WhatsApp",
       value: "+52 123 456 7890",
     },
   ],
   options = [
-    "Plantas Elite (Cacao / Banano)",
-    "Micropropagacion / Clonacion",
-    "Analisis de suelo",
-    "Asesoria y Manejo",
+    "Micropropagación in vitro",
+    "Clonación de plantas",
+    "Análisis de suelos",
+    "Asesoría técnica agrícola",
+    "Otro servicio técnico",
   ],
 } = Astro.props;
 ---
@@ -110,9 +109,8 @@ const {
           <div
             class="relative overflow-hidden rounded-3xl border border-white/70 shadow-xl"
           >
-            <Picture
+            <img
               src={image}
-              formats={["avif", "webp"]}
               loading="lazy"
               decoding="async"
               alt={imageAlt}
@@ -151,7 +149,7 @@ const {
           class="rounded-2xl border border-emerald-100 bg-white/75 p-5 shadow-lg backdrop-blur-xs sm:p-8"
         >
           <h3 class="mb-6 text-2xl font-bold text-gray-900">
-            Solicitar Cotizacion
+            Solicitar Asesoría
           </h3>
           <div class="space-y-4">
             <div>
@@ -161,12 +159,12 @@ const {
               <input
                 type="text"
                 class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 transition-all outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500"
-                placeholder="Ej. Agricola del Sur"
+                placeholder="Ej. Agrícola del Sur"
               />
             </div>
             <div>
               <label class="mb-1 block text-sm font-medium text-gray-700"
-                >Servicio o Producto de interes</label
+                >Servicio de interés</label
               >
               <select
                 class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 transition-all outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500"
@@ -181,10 +179,11 @@ const {
               <textarea
                 rows="4"
                 class="w-full resize-none rounded-lg border border-gray-300 bg-white px-4 py-3 transition-all outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500"
-                placeholder="Cuentanos sobre tu cultivo..."></textarea>
+                placeholder="Cuéntanos sobre tu cultivo, ubicación y objetivo..."
+              ></textarea>
             </div>
             <Button type="submit" fullWidth className="rounded-lg py-3.5">
-              Enviar Mensaje
+              Enviar solicitud
             </Button>
           </div>
         </form>

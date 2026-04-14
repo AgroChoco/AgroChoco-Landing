@@ -1,29 +1,27 @@
 ---
-title: Analisis de suelos
-description: Diagnostico tecnico para conocer fertilidad, balance de nutrientes y decisiones de manejo agronomico por parcela.
-excerpt: Datos de suelo para fertilizar mejor y producir con mayor eficiencia.
-category: Diagnostico agronomico
+title: Análisis de suelos
+description: Evaluación técnica de condiciones físicas, químicas y biológicas para decisiones de fertilización y manejo más eficientes.
+excerpt: Conoce pH, nutrientes, materia orgánica y estructura del suelo para mejorar rendimiento y reducir costos.
+category: Diagnóstico agronómico
 order: 4
 ---
 
-El analisis de suelos es la base de una nutricion vegetal efectiva. Sin datos confiables, la fertilizacion se vuelve una apuesta. Con diagnostico, se transforma en estrategia.
+El análisis de suelo es un servicio esencial para conocer en profundidad la condición real del terreno y tomar decisiones agronómicas con mayor precisión.
 
-## Informacion que aporta
+## ¿Qué evaluamos?
 
-- pH y capacidad de intercambio cationico.
-- Niveles de macro y micronutrientes.
-- Materia organica y condicion fisica del suelo.
-- Posibles limitantes de absorcion.
+- pH del suelo (acidez o alcalinidad).
+- Nutrientes esenciales (N, P, K y micronutrientes).
+- Contenido de materia orgánica.
+- Textura y estructura del suelo.
 
-## Como se traduce en decisiones
+## ¿Cómo se traduce en resultados?
 
-Con resultados interpretados tecnicamente se pueden definir:
+La información técnica permite definir estrategias de fertilización y manejo más eficientes, evitando deficiencias y excesos que afectan el desarrollo del cultivo.
 
-- Dosis de fertilizacion por etapa fenologica.
-- Correcciones de pH y enmiendas.
-- Priorizacion de zonas con mayor necesidad de intervencion.
-- Ajustes de costo-beneficio en el plan nutricional.
+## Beneficios
 
-## Frecuencia sugerida
-
-Se recomienda realizar analisis periodicos y repetir despues de cambios importantes en manejo, clima o rendimiento para mantener la estrategia actualizada.
+- Diagnóstico preciso de las condiciones del terreno.
+- Uso eficiente de fertilizantes.
+- Incremento en la productividad del cultivo.
+- Reducción de costos innecesarios.

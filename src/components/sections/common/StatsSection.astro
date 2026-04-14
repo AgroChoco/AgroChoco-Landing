@@ -1,7 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import type { ImageMetadata } from "astro";
-import { globalPlaceholderImage } from "../../../data/media";
+import { statsSectionImage } from "../../../data/media";
 
 interface StatItem {
   value: string;
@@ -10,25 +8,25 @@ interface StatItem {
 
 interface Props {
   items?: StatItem[];
-  backgroundImage?: ImageMetadata;
+  backgroundImage?: string;
 }
 
 const {
   items = [
     {
       value: "100%",
-      label: "Calidad genetica",
+      label: "Calidad genética",
     },
     {
       value: "Sanos",
       label: "Cultivos libres de plagas",
     },
     {
-      value: "Maximo",
+      value: "Máximo",
       label: "Rendimiento productivo",
     },
   ],
-  backgroundImage = globalPlaceholderImage,
+  backgroundImage = statsSectionImage,
 } = Astro.props;
 ---
 
@@ -36,9 +34,9 @@ const {
   class="relative overflow-hidden bg-linear-to-r from-emerald-800 to-teal-900 py-16"
 >
   <div class="absolute inset-0">
-    <Image
+    <img
       src={backgroundImage}
-      alt="Fondo agricultura"
+      alt="Fondo agrícola"
       class="h-full w-full object-cover opacity-30 mix-blend-overlay"
       loading="lazy"
       decoding="async"

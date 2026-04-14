@@ -16,13 +16,12 @@ interface Props {
 
 const {
   links = [
-    { href: "#inicio", label: "Inicio" },
-    { href: "#nosotros", label: "Nosotros" },
-    { href: "#productos", label: "Productos" },
-    { href: "#servicios", label: "Servicios" },
+    { href: "/#inicio", label: "Inicio" },
+    { href: "/#nosotros", label: "Nosotros" },
+    { href: "/#servicios", label: "Servicios" },
   ],
   ctaLabel = "Contactar",
-  ctaHref = "#contacto",
+  ctaHref = "/#contacto",
 } = Astro.props;
 ---
 
@@ -69,7 +68,7 @@ const {
         <details class="group">
           <summary
             class="cursor-pointer list-none p-2 text-gray-600 focus:outline-none"
-            aria-label="Abrir menu de navegacion"
+            aria-label="Abrir menú de navegación"
           >
             <span class="relative block h-7 w-7" aria-hidden="true">
               <span

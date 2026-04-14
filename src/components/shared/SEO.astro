@@ -1,5 +1,6 @@
 ---
 import { Font } from "astro:assets";
+import Logo from "@images/branding/agrochoco-logo.svg";
 
 interface Props {
   title?: string;
@@ -13,7 +14,7 @@ interface Props {
 
 const {
   title = "AgroChoco",
-  description = "Impulsamos la productividad agricola con biotecnologia vegetal, clonacion de plantas elite y asesoria tecnica especializada.",
+  description = "Micropropagación in vitro, clonación de plantas, análisis de suelos y asesoría técnica agrícola con enfoque científico y resultados medibles.",
   image = "/AgroChoco.svg",
   noindex = false,
   type = "website",
@@ -25,6 +26,7 @@ const imageUrl = new URL(image, site);
 
 const seoTitle = title.includes("AgroChoco") ? title : `${title} | AgroChoco`;
 const robotsContent = noindex ? "noindex, nofollow" : "index, follow";
+const faviconHref = typeof Logo === "string" ? Logo : Logo.src;
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -62,6 +64,9 @@ const websiteSchema = {
 <meta name="twitter:image" content={imageUrl.toString()} />
 
 <meta name="theme-color" content="#064e3b" />
+<link rel="icon" type="image/svg+xml" href={faviconHref} />
+<link rel="shortcut icon" href={faviconHref} />
+<link rel="apple-touch-icon" href={faviconHref} />
 
 <script
   type="application/ld+json"
